@@ -60,7 +60,7 @@
         </nav>
 
         <!-- Hero Section -->
-        <section id="home" class="bg-yellow-200 py-20 bg-cover" style="background-image :url('/img/ekonomi.jpg')">
+        <section id="home" class="bg-yellow-200 bg-blend-multiply py-20 bg-cover" style="background-image :url('/img/ekonomi.jpg')">
             <div class="container mx-auto text-center">
                 <h1 class="text-4xl font-bold mb-4">Selamat Datang di Nasi Ekonomi Makmur</h1>
                 <p class="text-lg mb-6">Nikmati hidangan lezat kami dengan suasana yang nyaman.</p>
@@ -71,7 +71,7 @@
         <!-- Menu Section -->
         <section id="menu" class="py-20">
             <div class="container mx-auto ">
-                <h2 class="text-3xl font-bold text-center mb-10">Menu Favorit</h2>
+                <h2 class="text-3xl font-bold text-center mb-10">Top Menu </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Menu Item -->
                     <div class="bg-white shadow-md rounded-xl p-6 ml-6 ">
