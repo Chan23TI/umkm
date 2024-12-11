@@ -23,7 +23,7 @@
         <!-- Navigation Bar -->
         <nav class="bg-red-600 text-white">
             <div class="container mx-auto flex items-center justify-between py-4 px-6">
-                <a href="" class="text-xl font-bold">Warung Makanan</a>
+                <a href="/" class="text-xl font-bold">Nasi Ekonomi Makmur</a>
                 <ul class="flex space-x-10">
                     <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
                     <li><a href="#menu" class="hover:text-yellow-300">Menu</a></li>
