@@ -24,7 +24,7 @@
                 <span class="bg-red-500  text-white px-4 py-2 rounded">{{ $message }}</span>
                 @enderror
             </div>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Simpan</button>
+            <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded">Simpan</button>
         </form>
     </div>
     <script>

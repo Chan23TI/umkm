@@ -7,7 +7,7 @@
             </div>
         @endif
 
-        <a href="{{ route('promo.create') }}" class="inline-block bg-blue-500 text-white px-4 py-2 rounded mb-4">
+        <a href="{{ route('promo.create') }}" class="inline-block bg-red-600 text-white px-4 py-2 rounded mb-4">
             Tambah Promo
         </a> <!-- Tombol untuk menambah promo -->
 

@@ -5,7 +5,8 @@ use App\Http\Controllers\PromoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $promo = \App\Models\Promo::all();
+    return view('welcome', compact('promo'));
 });
 
 
@@ -17,8 +18,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('promo', PromoController::class);
 });
 
-Route::resource('promo', PromoController::class);
+
 
 require __DIR__.'/auth.php';

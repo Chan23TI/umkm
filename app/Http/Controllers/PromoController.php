@@ -16,6 +16,7 @@ class PromoController extends Controller
         $promo = Promo::all();
         return view('promo.index', compact('promo'));
     }
+
     /**
      * Show the form for creating a new resource.
      */
