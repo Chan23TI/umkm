@@ -31,6 +31,9 @@
                     colors: {
                         magenta: '#abc68d',
                     },
+                    .mt: {
+                        '600px': '600px',
+                    },
                 },
             },
         };
@@ -39,24 +42,24 @@
 
 <body class="bg-gray-100 text-gray-800">
     <!-- Navigation Bar -->
-    <nav class="bg-red-600 text-white ">
+    <nav class="bg-gradient-to-r from-red-500 to-red-700 shadow-lg text-white ">
         <div class="container mx-auto flex items-center justify-between py-4 px-6">
             <a href="#home" class="text-xl font-inter font-bold">
                 <img src="/img/logo.png" alt="logo" class="w-[100px]"></a>
             <ul class="flex space-x-10">
-                <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
-                <li><a href="#menu" class="hover:text-yellow-300">Menu</a></li>
-                <li><a href="#promo" class="hover:text-yellow-300">Promo</a></li>
-                <li><a href="#review" class="hover:text-yellow-300">Review</a></li>
-                <li><a href="#about" class="hover:text-yellow-300">About</a></li>
-                <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+                <li><a href="#home" class=" hover:text-yellow-400">Home</a></li>
+                <li><a href="#menu" class="hover:text-yellow-400">Menu</a></li>
+                <li><a href="#promo" class="hover:text-yellow-400">Promo</a></li>
+                <li><a href="#review" class="hover:text-yellow-400">Review</a></li>
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
                 @if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="hover:text-yellow-300">
+                        <a href="{{ route('promo.index') }}" class="hover:text-yellow-400">
                             Dashboard
                         </a>
                     @else
-                        <a href="{{ route('login') }}" class="hover:text-yellow-300">
+                        <a href="{{ route('login') }}" class="hover:text-yellow-400">
                             Log in
                         </a>
 
@@ -72,43 +75,52 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-gray-100 bg-blend-multiply py-10 bg-cover"
-        style="background-image :url('/img/ekonomi.jpg')">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-sans font-bold mb-4">Selamat Datang di Nasi Ekonomi Makmur</h1>
-            <p class="text-lg mb-6">Nikmati hidangan lezat kami dengan suasana yang nyaman.</p>
+    <section id="home" class="bg-gray-100 bg-blend-multiply py-10 bg-cover  h-screen"
+        style="background-image :url('/img/umkm.png')">
+        <div class="container mt-[600px] mx-auto text-center">
+            {{-- <h1 class="text-4xl font-sans font-bold mb-4">Selamat Datang di Nasi Ekonomi Makmur</h1>
+            <p class="text-lg mb-6">Nikmati hidangan lezat kami dengan suasana yang nyaman.</p> --}}
             <a href="#menu" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Lihat Menu</a>
         </div>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="py-20">
-        <div class="container mx-34 mb-6 ">
+    <section id="menu" class="py-16 relative">
+        <img src="/img/asset2-01.png" alt="logo" class="w-52 absolute top-0 right-0 rotate-180">
+        <div class="container pb-8 relative">
             <h2 class="text-3xl font-bold text-center mb-10">Top Menu </h2>
-            <div class=" grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class=" grid grid-cols-1 md:grid-cols-3 mx-6 gap-12">
                 <!-- Menu Item -->
-                <div class="bg-white shadow-md rounded-xl p-6 ml-6 hover:scale-90 transition-all duration-300">
+                <div class="bg-white shadow-md rounded-xl p-6 hover:scale-90 transition-all duration-300 ">
                     <img src="/img/makanan4.webp" alt="Makanan" class="w-full h-60 object-cover rounded-lg mb-4">
                     <h3 class="text-xl font-semibold">Nasi Goreng Spesial</h3>
                     <p class="text-gray-600">Nasi goreng dengan rempah pilihan dan tambahan lauk pauk.</p>
+                    <div class="py-4 flex justify-end">
+                        <a href="https://wa.me/+6282373784348" class="bg-red-600 text-white px-4 py-2 rounded-3xl">Pesan menu </a>
+                    </div>
                 </div>
                 <!-- Menu Item -->
-                <div class="bg-white shadow-md rounded-xl p-6 ml-4 mr-4 hover:scale-90 transition-all duration-300 ">
+                <div class="bg-white shadow-md rounded-xl p-6  hover:scale-90 transition-all duration-300 ">
                     <img src="/img/makanan3.jpg" alt="Makanan" class="w-full h-60 object-cover rounded-lg mb-4">
                     <h3 class="text-xl font-semibold">Ayam Bakar</h3>
-                    <p class="text-gray-600">Ayam bakar dengan bumbu khas dan sambal yang menggugah selera.</p>
+                    <p class="text-gray-600 ">Ayam bakar dengan bumbu khas dan sambal yang menggugah selera.</p>
+                    <div class="py-4 flex justify-end">
+                        <a href="https://wa.me/+6282373784348" class="bg-red-600 text-white px-4 py-2 rounded-3xl"> Pesan menu</a>
+                    </div>
+
                 </div>
                 <!-- Menu Item -->
-                <div class="bg-white shadow-md rounded-xl p-6 mr-6 hover:scale-90 transition-all duration-300 ">
+                <div class="bg-white shadow-md rounded-xl p-6 hover:scale-90 transition-all duration-300 ">
                     <img src="/img/esteh.jpeg" alt="Minuman"
                         class="w-full h-60 object-cover rounded-lg mb-4 object-top">
                     <h3 class="text-xl font-semibold">Es Teh Manis</h3>
                     <p class="text-gray-600">Segarnya es teh manis untuk menemani santapan Anda.</p>
+                    <div class="py-4 flex justify-end">
+                        <a href=https://wa.me/+6282373784348"" class="bg-red-600 text-white px-4 py-2 rounded-3xl"> Pesan menu</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-
     </section>
 
     <section>
@@ -210,12 +222,13 @@
     </section>
 
     <!-- Promo Section -->
-    <section id="promo" class="py-20">
+    <section id="promo" class="py-16">
         <div class="container mx-34 mb-6 ">
             <h2 class="text-3xl font-bold text-center mb-10">Promo Beredar</h2>
             <div class="grid mt-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 @foreach ($promo as $item)
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden mx-6 hover:scale-90 transition-all duration-300">
+                    <div
+                        class="bg-white shadow-md rounded-lg overflow-hidden mx-6 my-6 hover:scale-90 transition-all duration-300">
                         <img src="{{ Storage::url($item->gambar) }}" class="w-full h-48 object-cover"
                             alt="Gambar Promo" />
                         <div class="p-4">
@@ -246,7 +259,10 @@
                                 <div class="relative p-6">
                                     <figure class="relative z-10">
                                         <blockquote class="p-6 text-lg leading-loose lg:text-xl">
-                                            <p class="w-108">"Enak dan terjangkau! Nasi Ekonomi Makmur selalu jadi pilihan saat ingin makan nasi rumahan yang lezat. Harganya pas di kantong dan porsinya cukup mengenyangkan. Cita rasa tradisionalnya enak banget!"</p>
+                                            <p class="w-108">"Enak dan terjangkau! Nasi Ekonomi Makmur selalu jadi
+                                                pilihan saat ingin makan nasi rumahan yang lezat. Harganya pas di
+                                                kantong dan porsinya cukup mengenyangkan. Cita rasa tradisionalnya enak
+                                                banget!"</p>
                                         </blockquote>
                                         <figcaption
                                             class="flex flex-col items-center gap-2 p-6 text-sm text-emerald-500">
@@ -300,7 +316,9 @@
                                 <div class="relative p-6">
                                     <figure class="relative z-10">
                                         <blockquote class="p-6 text-lg leading-loose lg:text-xl">
-                                            <p>"Sudah langganan sejak lama! Makanan di sini selalu enak dan bikin kangen. Porsi besar, rasa mantap, dan harganya bersahabat. Tempatnya sederhana, tapi selalu nyaman. Recommended banget!"
+                                            <p>"Sudah langganan sejak lama! Makanan di sini selalu enak dan bikin
+                                                kangen. Porsi besar, rasa mantap, dan harganya bersahabat. Tempatnya
+                                                sederhana, tapi selalu nyaman. Recommended banget!"
                                             </p>
                                         </blockquote>
                                         <figcaption
@@ -356,7 +374,9 @@
                                 <div class="relative p-6">
                                     <figure class="relative z-10">
                                         <blockquote class="p-6 text-lg leading-loose lg:text-xl">
-                                            <p>"Rasanya oke, harga murah, tapi tempatnya kadang terlalu ramai. Makanan enak dengan harga terjangkau, tapi kadang harus sabar menunggu meja kosong. Cocok untuk makan cepat dan murah."
+                                            <p>"Rasanya oke, harga murah, tapi tempatnya kadang terlalu ramai. Makanan
+                                                enak dengan harga terjangkau, tapi kadang harus sabar menunggu meja
+                                                kosong. Cocok untuk makan cepat dan murah."
                                             </p>
                                         </blockquote>
                                         <figcaption
@@ -437,23 +457,29 @@
 
 
     <!-- About Section -->
-    <section id="about" class="py-20">
+    <section id="about" class="py-20 relative">
+        <img src="/img/asset2-01.png" alt="logo" class="w-72 absolute top-0 right-0 z-[-1] -rotate-180">
         <div class="items-center container mx-auto">
             <h2 class="text-3xl font-bold mb-16 text-center">Tentang Kami</h2>
             <div class="flex flex-col justify-evenly lg:flex-row items-center lg:items-start gap-8 lg:gap-8">
                 <!-- Gambar -->
-                <div class="rounded-md overflow-hidden w-60 h-60 lg:w-2/5 lg:h-full shadow-lg hover:scale-90 transition-all duration-300">
-                    <img src="img/ekonomi.jpg" alt="About Us Image" class="w-full h-full hover:scale-125 hover:rotate-6 transition-all duration-300" />
+                <div
+                    class="rounded-md overflow-hidden w-60 h-60 lg:w-2/5 lg:h-full shadow-lg hover:scale-90 transition-all duration-300">
+                    <img src="img/ekonomi.jpg" alt="About Us Image"
+                        class="w-full h-full hover:scale-125 hover:rotate-6 transition-all duration-300" />
                 </div>
                 <!-- Deskripsi -->
                 <div class="text-center lg:text-left max-w-lg">
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        <span class="font-bold text-xl">Nasi Ekonomi Makmur</span> adalah UMKM yang bergerak di bidang kuliner,
-                        khususnya penyediaan makanan rumahan dengan cita rasa tradisional yang lezat dan harga terjangkau. <br /><br />
+                        <span class="font-bold text-xl">Nasi Ekonomi Makmur</span> adalah UMKM yang bergerak di bidang
+                        kuliner,
+                        khususnya penyediaan makanan rumahan dengan cita rasa tradisional yang lezat dan harga
+                        terjangkau. <br /><br />
                         Berdiri sejak tahun <span class="font-bold">2003</span>,
-                        warung ini telah menjadi pilihan utama masyarakat sekitar untuk menikmati hidangan sederhana namun menggugah selera.
+                        warung ini telah menjadi pilihan utama masyarakat sekitar untuk menikmati hidangan sederhana
+                        namun menggugah selera.
                         <br><br>
-                        <span  class="font-bold">Tentunya Murah, Enak dan Kenyang!</span>
+                        <span class="font-bold">Tentunya Murah, Enak dan Kenyang!</span>
                     </p>
                 </div>
             </div>
@@ -463,11 +489,24 @@
     <!-- Footer -->
     <footer id="contact" class="bg-red-600 text-white py-6">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Nasi Ekonomi Makmur. All rights reserved.</p>
-            <p>Hubungi kami di: <a href="mailto:EkonomiMakmur@gmail.com" class="underline">EkonomiMakmur@gmail.com</a>
+            <img src="img/logo.png" alt="logo" class="w-32 mx-auto mb-4">
+            <p>Hubungi kami sekarang :</p>
+            <div class="flex items-center justify-center gap-4">
+                <a href="https://instagram.com/" >
+                    <img src="img/instagram.png" class="w-8" alt="instagram">
+                </a>
+                <a href="https://wa.me/+6282373784348" >
+                    <img src="img/whatsapp.png" class="w-6" alt="whatsapp">
+                </a>
+                <a href="mailto:EkonomiMakmur@gmail.com">
+                    <img src="img/gmail.png" class="w-8" alt="email">
+                </a>
+            </div>
+            <p>&copy; Copyright 2025 <b>Nasi Ekonomi Makmur</b> All rights reserved.</p>
             </p>
         </div>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
 </html>

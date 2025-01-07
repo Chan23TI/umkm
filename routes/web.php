@@ -11,7 +11,8 @@ Route::get('/', function () {
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $promo = \App\Models\Promo::all();
+    return view('promo.index',  compact('promo'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
