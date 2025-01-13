@@ -21,6 +21,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+<<<<<<< HEAD
 Route::resource('menu', MenuController::class);
+=======
+Route::resource('menu', MenuController::class)->only(['index','create','store','edit','destroy','update']);
+Route::get('/menu', [MenuController::class, 'index'])->name('menu.index');
+Route::resource('menu', MenuController::class)->except(['show']);
+Route::post('/menu/store', [MenuController::class, 'store'])->name('menu.store');
+
+>>>>>>> 56ba6fb (yola ok)
 
 require __DIR__.'/auth.php';
