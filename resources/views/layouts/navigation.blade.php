@@ -13,12 +13,13 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div> --}}
-            <div class="flex items-center">
+                
+            {{-- <div class="flex items-center">
                 <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('promo.index')" :active="request()->routeIs('promo.index')">
                         {{ __('Promo') }}
                     </x-nav-link>
-                </div>
+                </div> --}}
 
                 <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('promo.index')" :active="request()->routeIs('promo.index')">

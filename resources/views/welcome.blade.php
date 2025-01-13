@@ -77,18 +77,18 @@
     <!-- Hero Section -->
     <section id="home" class="bg-gray-100 bg-blend-multiply py-10 bg-cover  h-screen"
         style="background-image :url('/img/umkm.png')">
-        <div class="container mt-[600px] mx-auto text-center">
+        <div class="container mt-[600px] mx-auto text-center ">
             {{-- <h1 class="text-4xl font-sans font-bold mb-4">Selamat Datang di Nasi Ekonomi Makmur</h1>
             <p class="text-lg mb-6">Nikmati hidangan lezat kami dengan suasana yang nyaman.</p> --}}
-            <a href="#menu" class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700">Lihat Menu</a>
+            <a href="#menu" class="bg-red-600 text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:text-yellow-400">Lihat Menu</a>
         </div>
     </section>
 
     <!-- Menu Section -->
     <section id="menu" class="py-16 relative">
-        <img src="/img/asset2-01.png" alt="logo" class="w-52 absolute top-0 right-0 rotate-180">
+        <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180">
         <div class="container pb-8 relative">
-            <h2 class="text-3xl font-bold text-center mb-10">Top Menu </h2>
+                <h2 class="text-3xl font-bold text-center mb-10">Top Menu </h2>
             <div class=" grid grid-cols-1 md:grid-cols-3 mx-6 gap-12">
                 <!-- Menu Item -->
                 <div class="bg-white shadow-md rounded-xl p-6 hover:scale-90 transition-all duration-300 ">
@@ -96,7 +96,7 @@
                     <h3 class="text-xl font-semibold">Nasi Goreng Spesial</h3>
                     <p class="text-gray-600">Nasi goreng dengan rempah pilihan dan tambahan lauk pauk.</p>
                     <div class="py-4 flex justify-end">
-                        <a href="https://wa.me/+6282373784348" class="bg-red-600 text-white px-4 py-2 rounded-3xl">Pesan menu </a>
+                        <a href="https://wa.me/+6282373784348" class="bg-red-600 text-white px-4 py-2 rounded-3xl">Pesan</a>
                     </div>
                 </div>
                 <!-- Menu Item -->
@@ -105,7 +105,7 @@
                     <h3 class="text-xl font-semibold">Ayam Bakar</h3>
                     <p class="text-gray-600 ">Ayam bakar dengan bumbu khas dan sambal yang menggugah selera.</p>
                     <div class="py-4 flex justify-end">
-                        <a href="https://wa.me/+6282373784348" class="bg-red-600 text-white px-4 py-2 rounded-3xl"> Pesan menu</a>
+                        <a href="https://wa.me/+6282373784348" class="bg-red-600 text-white px-4 py-2 rounded-3xl"> Pesan</a>
                     </div>
 
                 </div>
@@ -116,7 +116,7 @@
                     <h3 class="text-xl font-semibold">Es Teh Manis</h3>
                     <p class="text-gray-600">Segarnya es teh manis untuk menemani santapan Anda.</p>
                     <div class="py-4 flex justify-end">
-                        <a href=https://wa.me/+6282373784348"" class="bg-red-600 text-white px-4 py-2 rounded-3xl"> Pesan menu</a>
+                        <a href=https://wa.me/+6282373784348"" class="bg-red-600 text-white px-4 py-2 rounded-3xl"> Pesan</a>
                     </div>
                 </div>
             </div>
@@ -458,7 +458,7 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 relative">
-        <img src="/img/asset2-01.png" alt="logo" class="w-72 absolute top-0 right-0 z-[-1] -rotate-180">
+        <img src="/img/asset1.png" alt="asset" class="w-72 absolute top-0 right-0 z-[-1] -rotate-180">
         <div class="items-center container mx-auto">
             <h2 class="text-3xl font-bold mb-16 text-center">Tentang Kami</h2>
             <div class="flex flex-col justify-evenly lg:flex-row items-center lg:items-start gap-8 lg:gap-8">
