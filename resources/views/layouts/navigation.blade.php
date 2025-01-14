@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-gradient-to-r from-red-500 via-orange-500 to-orange-700 border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -11,6 +11,7 @@
                 </div>
 
                 <!-- Navigation Links -->
+<<<<<<< HEAD
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex justify-center w-full">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="relative text-white">
                         {{ __('Dashboard') }}
@@ -24,6 +25,11 @@
                         @if(request()->routeIs('review.*'))
                             <span class="absolute -bottom-2 left-0 right-0 mx-auto h-1 w-full bg-white rounded-full"></span>
                         @endif
+=======
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Dashboard') }}
+>>>>>>> 27799933a78d0c4cce6e7d1211045a266aefcc5b
                     </x-nav-link>
                 </div>
             </div>
@@ -80,9 +86,12 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+<<<<<<< HEAD
             <x-responsive-nav-link :href="route('review.index')" :active="request()->routeIs('review.*')">
                 {{ __('Review') }}
             </x-responsive-nav-link>
+=======
+>>>>>>> 27799933a78d0c4cce6e7d1211045a266aefcc5b
         </div>
 
         <!-- Responsive Settings Options -->
