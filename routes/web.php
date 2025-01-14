@@ -9,7 +9,6 @@ Route::get('/', function () {
     return view('welcome', compact('promo'));
 });
 
-
 Route::get('/dashboard', function () {
     $promo = \App\Models\Promo::all();
     return view('promo.index',  compact('promo'));
