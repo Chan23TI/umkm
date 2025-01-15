@@ -5,11 +5,16 @@ use App\Http\Controllers\PromoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\ReviewController;
-use App\Models\Review;
+use App\Http\Controllers\AboutUsController;
 
 Route::get('/', function () {
     $promo = \App\Models\Promo::all();
     return view('welcome', compact('promo'));
+});
+
+Route::get('/dashboard', function () {
+    $aboutus = \App\Models\AboutUs::all();
+    return view('aboutus.index', compact('aboutus'));
 });
 
 Route::get('/dashboard', function () {
@@ -24,6 +29,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('promo', PromoController::class);
     Route::resource('menu', MenuController::class);
     Route::resource('review', ReviewController::class);
+    Route::resource('aboutus', AboutUsController::class);
+
 });
 
 // Route::get('/menu', function () {

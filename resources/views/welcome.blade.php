@@ -75,9 +75,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-gray-100 bg-blend-multiply py-10 bg-cover  h-screen"
-        style="background-image :url('/img/umkm.png')">
-        <div class="container mt-[600px] mx-auto text-center ">
+    <section id="home" class="bg-gray-100 bg-blend-multiply py-10 bg-cover  h-[600px]"
+        style="background-image :url('/img/umkm3.png'); background-size: 1525px 600px;">
+        <div class="container mt-[430px] mx-auto text-center ">
             {{-- <h1 class="text-4xl font-sans font-bold mb-4">Selamat Datang di Nasi Ekonomi Makmur</h1>
             <p class="text-lg mb-6">Nikmati hidangan lezat kami dengan suasana yang nyaman.</p> --}}
             <a href="#menu" class="bg-red-600 text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:text-yellow-400">Lihat Menu</a>
@@ -88,7 +88,7 @@
     <section id="menu" class="py-16 relative">
         <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180">
         <div class="container pb-8 relative">
-                <h2 class="text-3xl font-bold text-center mb-10">Top Menu </h2>
+                <h1 class="text-4xl font-bold text-center mb-10">Top Menu </h1>
             <div class=" grid grid-cols-1 md:grid-cols-3 mx-6 gap-12">
                 <!-- Menu Item -->
                 <div class="bg-white shadow-md rounded-xl p-6 hover:scale-90 transition-all duration-300 ">
@@ -127,7 +127,7 @@
         <!-- Carousel Section -->
         <div id="default-carousel" class="relative w-full " data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">
+            <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-lg md:h-96 ">
                 <!-- Item 1 -->
                 <div class=" duration-700 ease-in-out active" data-carousel-item>
                     <img src="/img/gorengan.jpg"

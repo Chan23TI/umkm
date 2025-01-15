@@ -1,8 +1,10 @@
 <x-app-layout>
     <div class="max-w-4xl mx-auto py-6">
     <h1 class="text-2xl font-bold mb-4">Daftar Promo</h1>
+    <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180 mt-16">
+    <img src="/img/asset1.png" alt="asset" class="w-52 absolute bottom-0 left-0">
         @if (session('success'))
-            <div class="bg-green-500 text-white p-3 mb-4">
+            <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
                 {{ session('success') }}
             </div>
         @endif

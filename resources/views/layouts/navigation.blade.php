@@ -7,19 +7,18 @@
                         <img src="{{ asset('img/logo.png') }}" alt="logo nasi ekonomi makmur" class="w-20">
                 </div>
 
-                <!-- Navigation Links -->
-                {{-- <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div> --}}
-
              <div class="flex items-center">
-                {{-- <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('promo.index')" :active="request()->routeIs('promo.index')">
-                        {{ __('Promo') }}
+                <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('menu.index')" :active="request()->routeIs('menu.index')">
+                        {{ __('Menu') }}
                     </x-nav-link>
-                </div> --}}
+                </div>
+
+                <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('review.index')" :active="request()->routeIs('review.index')">
+                        {{ __('Review') }}
+                    </x-nav-link>
+                </div>
 
                 <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('promo.index')" :active="request()->routeIs('promo.index')">

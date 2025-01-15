@@ -1,5 +1,7 @@
 <x-app-layout>
     <div class="max-w-4xl mx-auto py-6">
+        <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180 mt-16">
+        <img src="/img/asset1.png" alt="asset" class="w-52 absolute bottom-0 left-0">
         <h1 class="text-2xl font-bold mb-4">Tambah Berita</h1>
         <form action="{{ route('promo.store') }}" method="POST" enctype="multipart/form-data">
             @csrf

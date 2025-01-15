@@ -9,6 +9,11 @@
         <div class="absolute top-0 left-0 w-48 h-48 bg-orange-400 opacity-50 rounded-full -translate-x-16 -translate-y-16"></div>
         <div class="absolute bottom-0 right-0 w-64 h-64 bg-orange-400 opacity-50 rounded-full translate-x-16 translate-y-16"></div>
 
+        @if (session('success'))
+            <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
+                {{ session('success') }}
+            </div>
+        @endif
         <!-- Ornamen garis-garis oranye -->
         <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-0 opacity-10">
             <div class="w-full h-1 bg-orange-400 mb-6"></div>
