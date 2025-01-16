@@ -42,7 +42,7 @@
 
 <body class="bg-gray-100 text-gray-800">
     <!-- Navigation Bar -->
-    <nav class="bg-gradient-to-r from-red-500 to-red-700 shadow-lg text-white ">
+    <nav class="bg-gradient-to-r from-red-500 to-red-700 shadow-lg fixed text-white z-50 w-full">
         <div class="container mx-auto flex items-center justify-between py-4 px-6">
             <a href="#home" class="text-xl font-inter font-bold">
                 <img src="/img/logo.png" alt="logo" class="w-[100px]"></a>
@@ -75,14 +75,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-gray-100 bg-blend-multiply py-10 bg-cover  h-[600px]"
-        style="background-image :url('/img/umkm3.png'); background-size: 1525px 600px;">
+    <section id="home" class="bg-gray-100 bg-blend-multiply py-10 bg-cover h-[600px]"
+        style="background-image :url('/img/umkm3.png'); background-size: 1525px 600px; background-position:center 50px ">
         <div class="container mt-[430px] mx-auto text-center ">
-            {{-- <h1 class="text-4xl font-sans font-bold mb-4">Selamat Datang di Nasi Ekonomi Makmur</h1>
-            <p class="text-lg mb-6">Nikmati hidangan lezat kami dengan suasana yang nyaman.</p> --}}
             <a href="#menu" class="bg-red-600 text-white text-lg px-8 py-4 rounded-xl shadow-lg hover:text-yellow-400">Lihat Menu</a>
         </div>
     </section>
+
+
 
     <!-- Menu Section -->
     <section id="menu" class="py-16 relative">
@@ -123,6 +123,7 @@
         </div>
     </section>
 
+
     <section>
         <!-- Carousel Section -->
         <div id="default-carousel" class="relative w-full " data-carousel="slide">
@@ -130,13 +131,13 @@
             <div class="relative h-[500px] md:h-[600px] overflow-hidden rounded-lg md:h-96 ">
                 <!-- Item 1 -->
                 <div class=" duration-700 ease-in-out active" data-carousel-item>
-                    <img src="/img/gorengan.jpg"
+                    <img src="/img/makanan4.webp"
                         class=" absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         alt="...">
                     <div class="bg-black bg-opacity-30 absolute inset-0"></div>
                     <div
                         class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl md:text-3xl">
-                        Gorengan Murah Meriah</div>
+                        Nasi Goreng Spesial</div>
                 </div>
                 <!-- Item 2 -->
                 <div class=" duration-700 ease-in-out" data-carousel-item>
@@ -463,25 +464,29 @@
             <h2 class="text-3xl font-bold mb-16 text-center">Tentang Kami</h2>
             <div class="flex flex-col justify-evenly lg:flex-row items-center lg:items-start gap-8 lg:gap-8">
                 <!-- Gambar -->
+                @foreach ($aboutUs as $item)
                 <div
                     class="rounded-md overflow-hidden w-60 h-60 lg:w-2/5 lg:h-full shadow-lg hover:scale-90 transition-all duration-300">
-                    <img src="img/ekonomi.jpg" alt="About Us Image"
+                    <img src="{{ Storage::url($item->gambar) }}" alt="About Us Image"
                         class="w-full h-full hover:scale-125 hover:rotate-6 transition-all duration-300" />
                 </div>
                 <!-- Deskripsi -->
                 <div class="text-center lg:text-left max-w-lg">
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        <span class="font-bold text-xl">Nasi Ekonomi Makmur</span> adalah UMKM yang bergerak di bidang
+                        {{-- <span class="font-bold text-xl">Nasi Ekonomi Makmur</span> adalah UMKM yang bergerak di bidang
                         kuliner,
                         khususnya penyediaan makanan rumahan dengan cita rasa tradisional yang lezat dan harga
                         terjangkau. <br /><br />
                         Berdiri sejak tahun <span class="font-bold">2003</span>,
                         warung ini telah menjadi pilihan utama masyarakat sekitar untuk menikmati hidangan sederhana
                         namun menggugah selera.
-                        <br><br>
+                        <br><br> --}}
+                        {{ $item->isi }}<br><br>
+                        {{ $item->isidua }}<br><br>
                         <span class="font-bold">Tentunya Murah, Enak dan Kenyang!</span>
                     </p>
                 </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -491,17 +496,20 @@
         <div class="container mx-auto text-center">
             <img src="img/logo.png" alt="logo" class="w-32 mx-auto mb-4">
             <p>Hubungi kami sekarang :</p>
+            @foreach ($kontak as $item)
             <div class="flex items-center justify-center gap-4">
-                <a href="https://instagram.com/" >
-                    <img src="img/instagram.png" class="w-8" alt="instagram">
+                <a href="https://instagram.com/{{ $item->ig }}">
+                    <img src="img/instagram.png" alt="ig" class="w-8">
                 </a>
-                <a href="https://wa.me/+6282373784348" >
-                    <img src="img/whatsapp.png" class="w-6" alt="whatsapp">
+                <a href="https://wa.me/{{ $item->wa }}">
+                    <img src="img/whatsapp.png" alt="WhatsApp" class="w-6">
                 </a>
-                <a href="mailto:EkonomiMakmur@gmail.com">
-                    <img src="img/gmail.png" class="w-8" alt="email">
+                <a href="mailto:{{ $item->email }}">
+                    <img src="img/gmail.png" alt="Email" class="w-8">
                 </a>
             </div>
+        @endforeach
+
             <p>&copy; Copyright 2025 <b>Nasi Ekonomi Makmur</b> All rights reserved.</p>
             </p>
         </div>

@@ -2,31 +2,31 @@
     <div class="max-w-4xl mx-auto py-6">
         <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180 mt-16">
         <img src="/img/asset1.png" alt="asset" class="w-52 fixed bottom-0 left-0">
-        <h1 class="text-2xl font-bold mb-4">Tambah About</h1>
-        <form action="{{ route('about.store') }}" method="POST" enctype="multipart/form-data">
+        <h1 class="text-2xl font-bold mb-4">Tambah Kontak</h1>
+        <form action="{{ route('kontak.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-4">
-                <label class="block text-sm font-medium">Isi About Paragraf 1</label>
-                <textarea name="isi" id="editor" rows="5" class="mt-1 block w-full border-gray-300 rounded-md" required></textarea>
-                @error('isi')
-                <span class="text-red-700  py-2 rounded">{{  $message }}</span>
-                @enderror
-            </div>
-
-            <div class="mb-4">
-                <label class="block text-sm font-medium">Isi About Paragraf 2</label>
-                <textarea name="isidua" id="editor" rows="5" class="mt-1 block w-full border-gray-300 rounded-md" required></textarea>
-                @error('isidua')
+                <label class="block text-sm font-medium">Nama Instagram</label>
+                <input type="text" name="ig" class="mt-1 block w-full border-gray-300 rounded-md" required />
+                @error('ig')
                 <span class="text-red-700  py-2 rounded">{{  $message }}</span>
                 @enderror
             </div>
             <div class="mb-4">
-                <label class="block text-sm font-medium">Gambar</label>
-                <input type="file" name="gambar" class="mt-1 block w-full" accept="image/*" />
-                @error('gambar')
-                <span class="text-red-700  py-2 rounded">{{ $message }}</span>
+                <label class="block text-sm font-medium">Nomor WhatsApp</label>
+                <input type="text" name="wa" class="mt-1 block w-full border-gray-300 rounded-md" required />
+                @error('wa')
+                <span class="text-red-700  py-2 rounded">{{  $message }}</span>
                 @enderror
             </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium">Alamat email</label>
+                <input type="text" name="email" class="mt-1 block w-full border-gray-300 rounded-md" required />
+                @error('email')
+                <span class="text-red-700  py-2 rounded">{{  $message }}</span>
+                @enderror
+            </div>
+        
             <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded">Simpan</button>
         </form>
     </div>
@@ -36,7 +36,7 @@
             .then(editor => {
                 editor.model.document.on('change:data', () => {
                     // Update the textarea value when the content changes
-                    document.querySelector('textarea[name="isi_about"]').value = editor.getData();
+                    document.querySelector('textarea[name="isi_menu"]').value = editor.getData();
                 });
             })
             .catch(error => {

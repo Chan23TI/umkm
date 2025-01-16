@@ -2,35 +2,34 @@
     <div class="max-w-4xl mx-auto py-6">
         <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180 mt-16">
         <img src="/img/asset1.png" alt="asset" class="w-52 fixed bottom-0 left-0">
-        <h1 class="text-2xl font-bold mb-4">Edit Promo</h1>
+        <h1 class="text-2xl font-bold mb-4">Edit Kontak</h1>
 
-            <form action="{{ route('promo.update', $promo->id) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('kontak.update', $kontak->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
 
                 @method('PUT')
                 <div class="mb-4">
-                    <label class="block text-sm font-medium">Judul</label>
-                    <input type="text" name="judul" value="{{ $promo->judul }}"
+                    <label class="block text-sm font-medium">Nama instagram</label>
+                    <input type="text" name="ig" value="{{ $kontak->ig }}"
                         class="mt-1 block w-full border-gray-300 rounded-md" required />
-                    @error('judul')
+                    @error('ig')
                         <span class="text-red-700  py-2 rounded">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mb-4">
-                    <label class="block text-sm font-medium">Isi promo</label>
-                    <textarea name="deskripsi" id="editor" rows="5" class="mt-1 block w-full border-gray-300 rounded-md" required>{{ $promo->deskripsi }}</textarea>
-                    @error('deskripsi')
+                    <label class="block text-sm font-medium">Nomor WhatsApp</label>
+                    <input type="text" name="wa" value="{{ $kontak->wa }}"
+                        class="mt-1 block w-full border-gray-300 rounded-md" required />
+                    @error('wa')
                         <span class="text-red-700  py-2 rounded">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mb-4">
-                    <label class="block text-sm font-medium">Gambar</label>
-                    <input type="file" name="gambar" class="mt-1 block w-full" accept="image/*" />
-                    @if ($promo->gambar)
-                        <img src="{{ Storage::url($promo->gambar) }}" class="h-48 mt-2" alt="Gambar Promo" />
-                    @endif
-                    @error('gambar')
+                    <label class="block text-sm font-medium">Alamat Email</label>
+                    <input type="text" name="email" value="{{ $kontak->email }}"
+                        class="mt-1 block w-full border-gray-300 rounded-md" required />
+                    @error('email')
                         <span class="text-red-700  py-2 rounded">{{ $message }}</span>
                     @enderror
                 </div>

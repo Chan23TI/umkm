@@ -7,12 +7,26 @@
                         <img src="{{ asset('img/logo.png') }}" alt="logo nasi ekonomi makmur" class="w-20">
                 </div>
 
+
              <div class="flex items-center">
+                <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('promo.index')" :active="request()->routeIs('promo.index')">
+                        {{ __('Promo') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('slider.index')" :active="request()->routeIs('slider.index')">
+                        {{ __('Slider') }}
+                    </x-nav-link>
+                </div>
+
                 <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('menu.index')" :active="request()->routeIs('menu.index')">
                         {{ __('Menu') }}
                     </x-nav-link>
                 </div>
+
 
                 <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('review.index')" :active="request()->routeIs('review.index')">
@@ -21,8 +35,14 @@
                 </div>
 
                 <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('promo.index')" :active="request()->routeIs('promo.index')">
-                        {{ __('Promo') }}
+                    <x-nav-link :href="route('about.index')" :active="request()->routeIs('about.index')">
+                        {{ __('About') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('kontak.index')" :active="request()->routeIs('kontak.index')">
+                        {{ __('Kontak') }}
                     </x-nav-link>
                 </div>
             </div>

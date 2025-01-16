@@ -1,21 +1,21 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\PromoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\PromoController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\KontakController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     $promo = \App\Models\Promo::all();
-    return view('welcome', compact('promo'));
+    $aboutUs = \App\Models\AboutUs::all();
+    $kontak = \App\Models\Kontak::all();
+    return view('welcome', compact('promo','aboutUs','kontak'));
 });
 
-Route::get('/dashboard', function () {
-    $aboutus = \App\Models\AboutUs::all();
-    return view('aboutus.index', compact('aboutus'));
-});
 
 Route::get('/dashboard', function () {
     $promo = \App\Models\Promo::all();
@@ -29,22 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::resource('promo', PromoController::class);
     Route::resource('menu', MenuController::class);
     Route::resource('review', ReviewController::class);
-    Route::resource('aboutus', AboutUsController::class);
-
+    Route::resource('about', AboutUsController::class);
+    Route::resource('slider', SliderController::class);
+    Route::resource('kontak', kontakController::class);
 });
 
-// Route::get('/menu', function () {
-//     return view('menu');
-// });
-
-// Route::get('/review', function () {
-//     return view('review');
-// });
-
-
-// Route::resource('menu', MenuController::class)->only(['index','create','store','edit','destroy','update']);
-// Route::get('/menu', [MenuController::class, 'index'])->name('menu.index');
-// Route::resource('menu', MenuController::class)->except(['show']);
-// Route::post('/menu/store', [MenuController::class, 'store'])->name('menu.store');
 
 require __DIR__.'/auth.php';

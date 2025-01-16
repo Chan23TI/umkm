@@ -4,21 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\AboutUs;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Storage;
-
 
 class AboutUsController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $aboutus = AboutUs::all();
-        return view('aboutus.index', compact('aboutus'));
+        $aboutUs = AboutUs::all();
+        return view('aboutus.index', compact('aboutUs'));
     }
 
     /**
@@ -29,26 +25,28 @@ class AboutUsController extends Controller
         return view('aboutus.create');
     }
 
-
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-{
-    $request->validate([
+    {
+        $request->validate([
+            'isi' => 'required|string',
+            'isidua' => 'required|string',
+            'gambar' => 'required|image|mimes:jpg,png,jpeg|max:2048',
+        ]);
 
-        'isi' => 'required|string',
-        'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-    ]);
+        $aboutUs = new AboutUs();
+        $aboutUs->isi = $request->isi;
+        $aboutUs->isidua = $request->isidua;
 
-    $aboutUs= new AboutUs();
-    if ($request->hasFile('gambar')) {
-        $aboutUs->gambar = $request->file('gambar')->store('images', 'public');
+        if ($request->hasFile('gambar')) {
+            $aboutUs->gambar = $request->file('gambar')->store('images', 'public');
+        }
+
+        $aboutUs->save();
+        return redirect()->route('about.index')->with('success', 'About berhasil ditambahkan.');
     }
-
-
-    return redirect()->route('aboutus.index')->with('success', 'Data berhasil ditambahkan!');
-}
 
     /**
      * Display the specified resource.
@@ -63,52 +61,47 @@ class AboutUsController extends Controller
      */
     public function edit($id)
     {
-        $aboutus = AboutUs::findOrFail($id);
-        return view('aboutus.edit', compact('aboutus'));
+        $aboutUs = AboutUs::findOrFail($id);
+        return view('aboutus.edit', compact('aboutUs'));
     }
-
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, $id)
-{
-    $request->validate([
-        'isi' => 'required|string',
-        'gambar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validasi gambar
-    ]);
+    {
+        $request->validate([
+            'isi' => 'string|required',
+            'isidua' => 'string|required',
+            'gambar' => 'nullable|image|mimes:jpg,png,jpeg|max:2048',
+        ]);
 
-    $aboutus = AboutUs::findOrFail($id);
+        $aboutUs = AboutUs::findOrFail($id);
 
-    // Cek apakah ada file gambar baru yang diunggah
-    if ($request->hasFile('gambar')) {
-        // Hapus gambar lama jika ada
-        if ($aboutus->gambar) {
-            Storage::delete($aboutus->gambar);
+
+        if ($request->hasFile('gambar')) {
+            if ($aboutUs->gambar) {
+                Storage::delete('public/' . $aboutUs->gambar);
+            }
+            $aboutUs->gambar = $request->file('gambar')->store('images', 'public');
         }
 
-        // Simpan gambar baru
-        $gambarPath = $request->file('gambar')->store('aboutus');
-        $aboutus->gambar = $gambarPath;
+        $aboutUs->isi = $request->isi;
+        $aboutUs->isidua = $request->isidua;
+        $aboutUs->save();
+        return redirect()->route('about.index')->with('success', 'About berhasil diupdate.');
     }
-
-    // Update isi
-    $aboutus->isi = $request->isi;
-    $aboutus->save();
-
-    return redirect()->route('aboutus.index')->with('success', 'Data berhasil diperbarui!');
-}
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(AboutUs $aboutUs)
-    {
+    public function destroy(AboutUs $aboutUs, $id)
+    {   $aboutUs = AboutUs::findOrFail($id);
         if ($aboutUs->gambar) {
             Storage::delete('public/' . $aboutUs->gambar);
         }
 
         $aboutUs->delete();
-        return redirect()->route('aboutus.index')->with('success', 'Au berhasil dihapus!');
+        return redirect()->route('about.index')->with('success', 'About berhasil dihapus.');
     }
 }
