@@ -1,4 +1,4 @@
-![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/esteh.jpeg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/sendok.png?raw=true)
 <img src="./5pvppypw.png" style="width:6.32in;height:3.47167in" />
 
 UJIAN AKHIR SEMESTER PRAKTIKUM JARINGAN KOMPUTER
