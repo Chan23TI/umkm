@@ -6,8 +6,6 @@
 
             <form action="{{ route('menu.update', $menu->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
-
-
                 @method('PUT')
                 <div class="mb-4">
                     <label class="block text-sm font-medium">Nama menu</label>
@@ -20,15 +18,15 @@
                 <div class="mb-4">
                     <label class="block text-sm font-medium">Deskripsi</label>
                     <textarea name="deskripsi" id="editor" rows="5" class="mt-1 block w-full border-gray-300 rounded-md" required>{{ $menu->deskripsi }}</textarea>
-                    @error('nama')
+                    @error('deskripsi')
                         <span class="text-red-700  py-2 rounded">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mb-4">
                     <label class="block text-sm font-medium">Harga</label>
-                    <input type="text" name="nama" value="{{ $menu->nama }}"
+                    <input type="text" name="harga" value="{{ $menu->harga }}"
                         class="mt-1 block w-full border-gray-300 rounded-md" required />
-                    @error('nama')
+                    @error('harga')
                         <span class="text-red-700  py-2 rounded">{{ $message }}</span>
                     @enderror
                 </div>

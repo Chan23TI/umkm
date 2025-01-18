@@ -18,14 +18,13 @@
             <a href="{{ route('about.create') }}" class="inline-block bg-red-600 text-white px-4 py-2 rounded mb-4">Tambah About</a>
         @endif
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
             @foreach ($aboutUs as $item)
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <img src="{{ Storage::url($item->gambar) }}" class="w-full h-48 object-cover" alt="Gambar About" />
                     <div class="p-4">
                         <p class="text-gray-600 mt-2">{{ $item->isi }}</p>
                         <p class="text-gray-600 mt-2">{{ $item->isidua }}</p>
-
                             <form action="{{ route('about.destroy', $item->id) }}" method="POST" class="inline">
                                 @csrf
                                 @method('DELETE')

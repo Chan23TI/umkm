@@ -45,6 +45,12 @@
                         {{ __('Kontak') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 flex-grow justify-center sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('gambar.index')" :active="request()->routeIs('gambar.index')">
+                        {{ __('Gambar') }}
+                    </x-nav-link>
+                </div>
             </div>
 
 

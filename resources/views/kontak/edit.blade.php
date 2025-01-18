@@ -33,6 +33,22 @@
                         <span class="text-red-700  py-2 rounded">{{ $message }}</span>
                     @enderror
                 </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium">Alamat UMKM</label>
+                    <input type="text" name="alamat" value="{{ $kontak->alamat }}"
+                        class="mt-1 block w-full border-gray-300 rounded-md" required />
+                    @error('alamat')
+                        <span class="text-red-700  py-2 rounded">{{ $message }}</span>
+                    @enderror
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium">Tahun Copyright</label>
+                    <input type="text" name="tahun" value="{{ $kontak->tahun }}"
+                        class="mt-1 block w-full border-gray-300 rounded-md" required />
+                    @error('tahun')
+                        <span class="text-red-700  py-2 rounded">{{ $message }}</span>
+                    @enderror
+                </div>
                 <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Update</button>
             </form>
     </div>

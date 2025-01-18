@@ -8,15 +8,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Kontak extends Model
 {
     use HasFactory;
-
-   // protected $table = 'menu'; // Pastikan sesuai dengan nama tabel Anda.
-
-
-
     protected $fillable = [
         'ig',
         'wa',
         'email',
-
+        'alamat',
+        'tahun',
     ];
 }

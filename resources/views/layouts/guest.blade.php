@@ -20,20 +20,25 @@
             <!-- Ornamen oranye -->
             <div class="absolute top-0 left-0 w-48 h-48 bg-orange-400 opacity-50 rounded-full -translate-x-16 -translate-y-16"></div>
             <div class="absolute bottom-0 right-0 w-64 h-64 bg-orange-400 opacity-50 rounded-full translate-x-16 translate-y-16"></div>
-            <div class="flex  w-[800px] h-[400px] bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="flex w-[900px] h-[550px] bg-white shadow-lg rounded-lg overflow-hidden">
+                <!-- Kolom Kiri (Gambar) -->
+                <div class="w-1/2">
+                    <img src="{{ asset('img/makanan.jpeg') }}" alt="Gambar Nasi Ekonomi" class="w-full h-full object-cover">
+                </div>
 
-                <div class="flex justify-end items-start">
-                    <div>
-                        <img src="{{ asset('img/logo.png') }}" alt="logo nasi ekonomi makmur" class="w-[200px] rounded-xl mr-48">
+                <!-- Kolom Kanan (Logo + Form) -->
+                <div class="w-1/2 flex flex-col items-center justify-center px-8 py-6">
+                    <!-- Logo -->
+                    <div class="mb-4">
+                        <img src="{{ asset('img/logo.png') }}" alt="Logo Nasi Ekonomi Makmur" class="w-36">
                     </div>
 
-
-                    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg mr-20">
+                    <!-- Form Login -->
+                    <div class="w-full">
                         {{ $slot }}
                     </div>
                 </div>
-
-            {{-- </div> --}}
+            </div>
         </div>
 
     </body>

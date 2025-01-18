@@ -13,7 +13,7 @@
             Tambah Review
         </a> <!-- Tombol untuk menambah review -->
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-4">
             @foreach ($review as $item)
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <div class="p-4">

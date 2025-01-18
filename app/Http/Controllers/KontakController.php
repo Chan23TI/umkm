@@ -33,15 +33,19 @@ class KontakController extends Controller
             'ig' => 'required|string|max:255',
             'wa' => 'required|string|max:255',
             'email' => 'required|string|max:255',
+            'alamat' => 'required|string|max:255',
+            'tahun' => 'required|string|max:255',
         ]);
 
         $kontak = new Kontak();
         $kontak->ig=$request->ig;
         $kontak->wa = $request->wa;
         $kontak->email = $request->email;
+        $kontak->alamat = $request->alamat;
+        $kontak->tahun = $request->tahun;
 
         $kontak->save();
-        return redirect()->route('kontak.index')->with('succes', 'Review berhasil ditambahkan!');
+        return redirect()->route('kontak.index')->with('success', 'Kontak berhasil ditambahkan!');
 
     }
 
@@ -70,13 +74,18 @@ class KontakController extends Controller
             'ig' => 'required|string|max:255',
             'wa' => 'required|string|max:255',
             'email' => 'required|string|max:255',
+            'alamat' => 'required|string|max:255',
+            'tahun' => 'required|string|max:255',
         ]);
 
         $kontak->ig = $request->ig;
         $kontak->wa = $request->wa;
         $kontak->email = $request->email;
+        $kontak->alamat = $request->alamat;
+        $kontak->tahun = $request->tahun;
+
         $kontak->save();
-        return redirect()->route('kontak.index')->with('succes', 'Review berhasil diperbarui!');
+        return redirect()->route('kontak.index')->with('success', 'Kontak berhasil diperbarui!');
 
     }
 
@@ -86,7 +95,7 @@ class KontakController extends Controller
     public function destroy(Kontak $kontak)
     {
         $kontak->delete();
-        return redirect()->route('kontak.index')->with('success', 'Menu berhasil dihapus!');
+        return redirect()->route('kontak.index')->with('success', 'Kontak berhasil dihapus!');
 
     }
 }

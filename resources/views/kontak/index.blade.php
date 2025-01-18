@@ -21,15 +21,16 @@
             <a href="{{ route('kontak.create') }}" class="inline-block bg-red-600 text-white px-4 py-2 rounded mb-4">Tambah Kontak</a>
         @endif
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
             @foreach ($kontak as $item)
-                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden w-full ">
                     <div class="p-4">
-                        <p class="text-gray-600 mt-2">{{ $item->ig }}</p>
-                        <p class="text-gray-600 mt-2">{{ $item->wa }}</p>
-                        <p class="text-gray-600 mt-2">{{ $item->email }}</p>
+                        <p class="text-gray-600 mt-2"><span><b>Nama instagram : </b></span>{{ $item->ig }}</p>
+                        <p class="text-gray-600 mt-2"><span><b>Nomor whatsapp : </b></span>{{ $item->wa }}</p>
+                        <p class="text-gray-600 mt-2"><span><b>Alamat email : </b></span>{{ $item->email }}</p>
+                        <p class="text-gray-600 mt-2"><span><b>Alamat UMKM : </b></span>{{ $item->alamat }}</p>
+                        <p class="text-gray-600 mt-2"><span><b>Tahun Copyright : </b></span>{{ $item->tahun }}</p>
                         <div class="mt-4">
-                            <a href="{{ route('kontak.edit', $item->id) }}" class="text-blue-500 hover:underline">Edit</a>
                             <form action="{{ route('kontak.destroy', $item->id) }}" method="POST" class="inline">
                                 @csrf
                                 @method('DELETE')

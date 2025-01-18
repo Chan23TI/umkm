@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('kontaks', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('ig')->nullable();
-            $table->string('wa')->nullable();
-            $table->string('email')->nullable();
+            $table->string('ig');
+            $table->string('wa');
+            $table->string('email');
+            $table->string('alamat');
+            $table->string('tahun');
         });
     }
 

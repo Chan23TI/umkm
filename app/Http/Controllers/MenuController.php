@@ -26,7 +26,7 @@ class MenuController extends Controller
             'nama' => 'required|string|max:255',
             'harga' => 'required|numeric',
             'deskripsi' => 'required|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 
         $menu = new Menu();
@@ -54,11 +54,12 @@ class MenuController extends Controller
             'nama' => 'required|string|max:255',
             'harga' => 'required|numeric',
             'deskripsi' => 'required|string',
-            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 
         $menu->nama = $validated['nama'];
         $menu->harga = $validated['harga'];
+        
 
         // Hapus elemen HTML yang tidak diinginkan dari deskripsi
         $menu->deskripsi = strip_tags($validated['deskripsi']);

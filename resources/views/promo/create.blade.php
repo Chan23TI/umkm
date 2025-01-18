@@ -1,7 +1,9 @@
 <x-app-layout>
     <div class="max-w-4xl mx-auto py-6">
-        <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180 mt-16">
-        <img src="/img/asset1.png" alt="asset" class="w-52 fixed bottom-0 left-0">
+        {{-- <img src="/img/asset1.png" alt="asset" class="w-52 absolute top-0 right-0 rotate-180 mt-16">
+        <img src="/img/asset1.png" alt="asset" class="w-52 fixed bottom-0 left-0"> --}}
+        <div class="absolute top-0 left-0 w-48 h-48 bg-orange-400 opacity-50 rounded-full -translate-x-16 -translate-y-16"></div>
+        <div class="absolute bottom-0 right-0 w-64 h-64 bg-orange-400 opacity-50 rounded-full translate-x-16 translate-y-16"></div>
         <h1 class="text-2xl font-bold mb-4">Tambah Promo</h1>
         <form action="{{ route('promo.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
