@@ -1,8 +1,6 @@
 ***Software Requirements for UMKM Nasi Ekonomi Makmur***
 ##
 <a name="_1atva7ou7gn"></a>**Software Requirements**
-## <a name="_86vp2o94t960"></a>**Software Requirements for UMKM Nasi Ekonomi Makmur
-
 
 **Specification**
 
@@ -13,15 +11,17 @@ for
 
 Prepared by :		
 
-**Hervyola Verin Febriani (2355301084)**
-**Novia Zulma (2355301165)**
+`		`**Hervyola Verin Febriani (2355301084)**
+
+`		`**Novia Zulma (2355301165)**
+
 **Steven Chandra (2355301192)**
 
 
 
 
 
-*Politeknik Caltex Riau,Pekanbaru 	`		``		``		`					2025*
+*Politeknik Caltex Riau,Pekanbaru 							2025*
 
 
 
@@ -35,7 +35,6 @@ Dokumen Software Requirement Specification (SRS) merupakan dokumen spesifikasi p
 ---
 Sistem Website UMKM merupakan website yang kami bangun untuk mempermudah UMKM tersebut untuk memperkenalkan produk mereka di lingkup yang lebih luas dan juga memberikan informasi mengenai promo dari produk yang ada UMKM tersebut.
 
-## <a name="_qxlxlc5nb4sq"></a>**1.3 Akronim, singkatan, definisi**
 -----
 
 |**Istilah**|**Definisi**|
@@ -92,11 +91,11 @@ Berikut ini fitur yang dapat diakses oleh user :
 -----Sistem Informasi UMKM adalah sebuah sistem informasi yang diaplikasikan pada sebuah website. Terdapat 2 jenis aktor yaitu admin dan user. Pengolahan data dilakukan oleh admin dan user hanya melihat informasi pada halaman homepage website.
 ## <a name="_7ofyp3quv19i"></a>**2.1.1 Antarmuka Sistem**
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.001.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.001.png)
 
 **Admin**
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.002.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.002.png)
 
 
 
@@ -105,7 +104,7 @@ Berikut ini fitur yang dapat diakses oleh user :
 
 **User**
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.003.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.003.png)
 
 
 
@@ -123,7 +122,7 @@ Halaman User
 
 **2.1.3 Antarmuka Perangkat Keras**
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.004.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.004.png)
 
 **2.1.4 Antarmuka Perangkat Lunak**
 
@@ -182,7 +181,7 @@ Tidak ada
 
 -----
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.005.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.005.png)
 **
 
 
@@ -192,7 +191,7 @@ Tidak ada
 Use Case : Login
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.006.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.006.png)
 
 Deskripsi singkat admin melakukan login terlebih dahulu sebelum masuk ke dalam tampilan home admin, apabila gagal login akan muncul pesan alert error login.
 
@@ -208,7 +207,7 @@ Deskripsi Langkah-Langkah :
 Use Case : Input Menu
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.007.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.007.png)
 
 Deskripsi singkat admin menginput data menu lalu menambahkan deskripsi tentang menu, harga serta gambar dari menu tersebut. 
 
@@ -224,7 +223,7 @@ Use Case : Input data review
 
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.008.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.008.png)
 
 Deskripsi singkat sistem dapat menampilkan halaman untuk menginputkan data review. Deskripsi : 
 
@@ -239,7 +238,7 @@ Use case : Input data promo
 
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.009.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.009.png)
 
 Deskripsi singkat admin melakukan pengisian data promo. Deskripsi langkah- langkah : 
 
@@ -253,7 +252,7 @@ Use Case : Input data About Us
 
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.010.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.010.png)
 
 Deskripsi singkat admin melakukan penginputan data about us dan juga gambar mengenai deskripsi tersebut. Deskripsi langkah- langkah : 
 
@@ -268,7 +267,7 @@ Use Case : Input kontak
 
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.011.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.011.png)
 
 Deskripsi singkat sistem dapat menampilkan kontak berupa instagram, whatsApp, dan juga email. Deskripsi langkah-langkah : 
 
@@ -283,7 +282,7 @@ Use Case : Input Slider
 
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.012.jpeg)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.012.jpeg)
 
 Deskripsi singkat Sistem dapat menampilkan halaman input slider yang akan ditampilkan di homepage. Deskripsi langkah-langkah : 
 
@@ -297,7 +296,7 @@ Use Case : Input logo dan foto sampul
 
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.013.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.013.png)
 
 Deskripsi singkat sistem akan menampilkan halaman input data logo dan juga foto sampul pada website. Deskripsi langkah-langkah : 
 
@@ -311,7 +310,7 @@ Use Case : Mengunjungi website
 
 Diagram : 
 
-![](Aspose.Words.0961d62b-a42d-45ad-b1aa-ccb95c8a4c73.014.png)
+![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.014.png)
 
 Deskripsi singkat, user dapat mengunjungi website dan melihat semua menu, promo, review, about us, dan slider yang ada pada website.
 
