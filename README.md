@@ -65,7 +65,7 @@ Berikut ini fitur yang dapat diakses oleh user :
 
 **Admin**
 
-![alt text](?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/flowchart1.jpg?raw=true)
 
 
 
@@ -74,7 +74,7 @@ Berikut ini fitur yang dapat diakses oleh user :
 
 **User**
 
-![alt text](?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/flowchart2.jpg?raw=true)
 
 
 
@@ -161,7 +161,7 @@ Tidak ada
 Use Case : Login
 Diagram : 
 
-![alt text]( ?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/login.jpg ?raw=true)
 
 
 Deskripsi singkat admin melakukan login terlebih dahulu sebelum masuk ke dalam tampilan home admin, apabila gagal login akan muncul pesan alert error login.
@@ -288,7 +288,7 @@ Use Case : Mengunjungi website
 
 Diagram : 
 
-![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/2.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/8.jpg?raw=true)
 
 Deskripsi singkat, user dapat mengunjungi website dan melihat semua menu, promo, review, about us, dan slider yang ada pada website.
 
