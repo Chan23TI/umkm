@@ -81,11 +81,20 @@ Berikut ini fitur yang dapat diakses oleh user :
 ## <a name="_h0yo5dpv39ls"></a>**2.1.2 Antarmuka Pengguna**
 
 Halaman Admin
-<Gambar tampilan di sisi admin semuanya masukin dan penjelasannya>
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/halaman_login.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/promo_index.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/create.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/update.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/slider_index.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/menu_index.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/review_index.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/about_index.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/kontak_index.jpg?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/gambar_index.jpg?raw=true)
 
 Halaman User 
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/halaman_website.png?raw=true)
 
-<Gambar tampilan di sisi user semuanya masukin dan penjelasannya>
 
 
 
