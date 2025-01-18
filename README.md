@@ -161,7 +161,8 @@ Tidak ada
 Use Case : Login
 Diagram : 
 
-![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/login.jpg ?raw=true)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/login.jpg?raw=true)
+
 
 
 Deskripsi singkat admin melakukan login terlebih dahulu sebelum masuk ke dalam tampilan home admin, apabila gagal login akan muncul pesan alert error login.
