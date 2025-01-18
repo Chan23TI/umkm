@@ -61,11 +61,11 @@ Berikut ini fitur yang dapat diakses oleh user :
 -----Sistem Informasi UMKM adalah sebuah sistem informasi yang diaplikasikan pada sebuah website. Terdapat 2 jenis aktor yaitu admin dan user. Pengolahan data dilakukan oleh admin dan user hanya melihat informasi pada halaman homepage website.
 ## <a name="_7ofyp3quv19i"></a>**2.1.1 Antarmuka Sistem**
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.001.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/11.jpg?raw=true)
 
 **Admin**
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.002.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/flowchart1.jpg?raw=true)
 
 
 
@@ -74,7 +74,7 @@ Berikut ini fitur yang dapat diakses oleh user :
 
 **User**
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.003.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/flowchart2.jpg?raw=true)
 
 
 
@@ -150,8 +150,8 @@ Tidak ada
 **2.2 Spesifikasi Kebutuhan Fungsional**
 
 -----
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/6.jpg?raw=true)
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.005.png)
 **
 
 
@@ -161,7 +161,8 @@ Tidak ada
 Use Case : Login
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.006.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/login.jpg ?raw=true)
+
 
 Deskripsi singkat admin melakukan login terlebih dahulu sebelum masuk ke dalam tampilan home admin, apabila gagal login akan muncul pesan alert error login.
 
@@ -177,7 +178,9 @@ Deskripsi Langkah-Langkah :
 Use Case : Input Menu
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.007.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/5.jpg?raw=true)
+
+
 
 Deskripsi singkat admin menginput data menu lalu menambahkan deskripsi tentang menu, harga serta gambar dari menu tersebut. 
 
@@ -193,7 +196,9 @@ Use Case : Input data review
 
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.008.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/10.jpg?raw=true)
+
+
 
 Deskripsi singkat sistem dapat menampilkan halaman untuk menginputkan data review. Deskripsi : 
 
@@ -208,7 +213,9 @@ Use case : Input data promo
 
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.009.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/4.jpg?raw=true)
+
+
 
 Deskripsi singkat admin melakukan pengisian data promo. Deskripsi langkah- langkah : 
 
@@ -222,7 +229,8 @@ Use Case : Input data About Us
 
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.010.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/3.jpg?raw=true)
+
 
 Deskripsi singkat admin melakukan penginputan data about us dan juga gambar mengenai deskripsi tersebut. Deskripsi langkah- langkah : 
 
@@ -237,7 +245,7 @@ Use Case : Input kontak
 
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.011.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/9.jpg?raw=true)
 
 Deskripsi singkat sistem dapat menampilkan kontak berupa instagram, whatsApp, dan juga email. Deskripsi langkah-langkah : 
 
@@ -252,7 +260,7 @@ Use Case : Input Slider
 
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.012.jpeg)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/2.jpg?raw=true)
 
 Deskripsi singkat Sistem dapat menampilkan halaman input slider yang akan ditampilkan di homepage. Deskripsi langkah-langkah : 
 
@@ -266,7 +274,7 @@ Use Case : Input logo dan foto sampul
 
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.013.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/1.jpg?raw=true)
 
 Deskripsi singkat sistem akan menampilkan halaman input data logo dan juga foto sampul pada website. Deskripsi langkah-langkah : 
 
@@ -280,7 +288,7 @@ Use Case : Mengunjungi website
 
 Diagram : 
 
-![](Aspose.Words.51f819e6-5cec-4859-9ec0-a62e91329e95.014.png)
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/8.jpg?raw=true)
 
 Deskripsi singkat, user dapat mengunjungi website dan melihat semua menu, promo, review, about us, dan slider yang ada pada website.
 
@@ -333,7 +341,7 @@ Perbedaan admin dan user dalam mengakses ini terdapat di sisi login, dimana home
 **3.2 Struktur Detail Kebutuhan Non-Fungsional**
 
 -----
-{ERD}
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/erd_umkm_makmur.drawio.png?raw=true)
 
 **3.3.1 Logika Struktur Data** 
 
