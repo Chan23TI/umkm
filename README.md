@@ -34,22 +34,15 @@ Bab selanjutnya yaitu menjelaskan sistem yang telah diterapkan pada website ini.
 Usaha Mikro, Kecil, dan Menengah (UMKM) adalah bagian penting dari perekonomian di Indonesia. UMKM menyediakan banyak lapangan kerja dan membantu meningkatkan pendapatan negara. Tetapi, semakin banyaknya UMKM di masyarakat membuat persaingan menjadi sangat ketat. Untuk bisa bertahan dan berkembang, UMKM harus terus berinovasi dan beradaptasi. Salah satu cara yang efektif adalah dengan menggunakan teknologi digital. Pemasaran lewat media sosial seperti Instagram, Facebook, dan TikTok bisa membantu UMKM menarik perhatian lebih banyak pelanggan, meningkatkan popularitas, dan memperluas pasar. Dalam studi kasus project ini kami menganalisis kebutuhan UMKM Nasi Ekonomi Makmur yang berada di Jl. Umban sari atas. Kami merancang sebuah sistem Company Profile yang dapat digunakan untuk pemasaran khusus UMKM ini. Berikut penjelasan sistem software kami,  Fitur yang dapat di akses admin : 
 
 - Login
-- Create Menu
-- Create Review
-- Create Promo
-- Update Menu
-- Update Review
-- Update Promo
-- Create About Us
-- Update About us
-- Create Slider
-- Update Slider
-- Create Kontak
-- Update Kontak
-- Create Logo
-- Update Logo
-- Create Sampul
-- Update Sampul
+- Create, update, delete Menu
+- Create, update, delete Review
+- Create, update, delete Promo
+- Create, update, delete About Us
+- Create, update, delete Slider
+- Create, update, delete Kontak
+- Create, update, delete Logo
+- Create, update, delete Sampul
+
 
 
 Berikut ini fitur yang dapat diakses oleh user : 
