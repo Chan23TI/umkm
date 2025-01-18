@@ -37,7 +37,7 @@ class ReviewController extends Controller
         $review->review=$request->review;
 
         $review->save();
-        return redirect()->route('review.index')->with('succes', 'Review berhasil ditambahkan!');
+        return redirect()->route('review.index')->with('success', 'Review berhasil ditambahkan!');
     }
 
     /**
@@ -68,7 +68,7 @@ class ReviewController extends Controller
 
         $review->review = $request->review;
         $review->save();
-        return redirect()->route('review.index')->with('succes', 'Review berhasil diperbarui!');
+        return redirect()->route('review.index')->with('success', 'Review berhasil diperbarui!');
     }
 
     /**
