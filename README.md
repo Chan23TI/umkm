@@ -1,6 +1,8 @@
 ***Software Requirements for UMKM Nasi Ekonomi Makmur***
 ##
 <a name="_1atva7ou7gn"></a>**Software Requirements**
+## <a name="_86vp2o94t960"></a>**Software Requirements for UMKM Nasi Ekonomi Makmur
+
 
 **Specification**
 
@@ -11,25 +13,28 @@ for
 
 Prepared by :		
 
-`		`**Hervyola Verin Febriani (2355301084)**
-
-`		`**Novia Zulma (2355301165)**
-
+**Hervyola Verin Febriani (2355301084)**
+**Novia Zulma (2355301165)**
 **Steven Chandra (2355301192)**
 
 
 
 
 
-*Politeknik Caltex Riau,Pekanbaru 							2025*
+*Politeknik Caltex Riau,Pekanbaru 	`		``		``		`					2025*
 
 
 
 ## <a name="_1b19dgjpxzub"></a>**BAB I Pendahuluan**
+
 -----
 
-**1.1Tujuan-----**Dokumen Software Requirement Specification (SRS) merupakan dokumen spesifikasi perangkat lunak untuk membangun “Sistem Website UMKM”. Dokumen ini dibangun untuk memudahkan UMKM tersebut untuk memperkenalkan produk mereka di lingkup yang lebih luas. Sehingga dokumen ini dapat dijadikan acuan teknis untuk membangun perangkat lunak dari “Sistem Website UMKM”.
-## <a name="_86vp2o94t960"></a>**1.2Lingkup-----**Sistem Website UMKM merupakan website yang kami bangun untuk mempermudah UMKM tersebut untuk memperkenalkan produk mereka di lingkup yang lebih luas dan juga memberikan informasi mengenai promo dari produk yang ada UMKM tersebut.
+## <a name="_zgzfrb6n3mdw"></a><a name="_feovkg4fnrws"></a>**1.1 Tujuan** 
+Dokumen Software Requirement Specification (SRS) merupakan dokumen spesifikasi perangkat lunak untuk membangun “Sistem Website UMKM”. Dokumen ini dibangun untuk memudahkan UMKM tersebut untuk memperkenalkan produk mereka di lingkup yang lebih luas. Sehingga dokumen ini dapat dijadikan acuan teknis untuk membangun perangkat lunak dari “Sistem Website UMKM”.
+## <a name="_86vp2o94t960"></a>**1.2Lingkup**
+---
+Sistem Website UMKM merupakan website yang kami bangun untuk mempermudah UMKM tersebut untuk memperkenalkan produk mereka di lingkup yang lebih luas dan juga memberikan informasi mengenai promo dari produk yang ada UMKM tersebut.
+
 ## <a name="_qxlxlc5nb4sq"></a>**1.3 Akronim, singkatan, definisi**
 -----
 
