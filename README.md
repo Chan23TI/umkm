@@ -446,4 +446,14 @@ BAB 3
 
 3\.2 → Steven
 
+Project
+
+----
+
+CRUD MENU, About Us → Yola
+CRUD review, Kontak → Novia
+CRUD Gambar, slider, Promo → Steven
+
+
+
 
