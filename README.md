@@ -1,27 +1,4 @@
-***Software Requirements for UMKM Nasi Ekonomi Makmur***
-##
-<a name="_1atva7ou7gn"></a>**Software Requirements**
-
-**Specification**
-
-for
-
-**Sistem UMKM Nasi Ekonomi Makmur**
-
-
-Prepared by :		
-
-`		`**Hervyola Verin Febriani (2355301084)**
-
-`		`**Novia Zulma (2355301165)**
-
-**Steven Chandra (2355301192)**
-
-
-
-
-
-*Politeknik Caltex Riau,Pekanbaru 							2025*
+![alt text](https://github.com/Chan23TI/umkm/blob/main/public/img/coverLaporan.jpg?raw=true)
 
 
 
