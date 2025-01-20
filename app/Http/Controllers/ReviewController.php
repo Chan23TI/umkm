@@ -31,10 +31,12 @@ class ReviewController extends Controller
     {
         $request->validate([
             'review' => 'required|string|max:255',
+            'nama' => 'required|string|max:255',
         ]);
 
         $review = new Review;
         $review->review=$request->review;
+        $review->nama=$request->nama;
 
         $review->save();
         return redirect()->route('review.index')->with('success', 'Review berhasil ditambahkan!');
@@ -63,10 +65,12 @@ class ReviewController extends Controller
     public function update(Request $request, Review $review)
     {
         $request->validate([
+            'nama' => 'required|string|max:255',
             'review' => 'required|string|max:255',
         ]);
 
         $review->review = $request->review;
+        $review->nama=$request->nama;
         $review->save();
         return redirect()->route('review.index')->with('success', 'Review berhasil diperbarui!');
     }

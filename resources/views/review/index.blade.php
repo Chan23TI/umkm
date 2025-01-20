@@ -17,7 +17,9 @@
             @foreach ($review as $item)
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <div class="p-4">
+                        <h3 class="text-lg font-bold">{{ $item->nama }}</h3>
                         <p class="text-gray-600 mt-2">{{ $item->review }}</p>
+
                         <div class="mt-4">
                             <a href="{{ route('review.edit', $item->id) }}" class="text-blue-500 hover:underline">Edit</a>
                             <form action="{{ route('review.destroy', $item->id) }}" method="POST" class="inline">

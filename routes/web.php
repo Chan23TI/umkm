@@ -1,21 +1,23 @@
 <?php
 
+use App\Models\Menu;
+use App\Models\Promo;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\PromoController;
+use App\Http\Controllers\GambarController;
+use App\Http\Controllers\KontakController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\AboutUsController;
-use App\Http\Controllers\GambarController;
-use App\Http\Controllers\KontakController;
 use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
-    $promo = \App\Models\Promo::all();
+    $promo= Promo::orderBy('created_at', 'desc')->get();
     $aboutUs = \App\Models\AboutUs::all();
     $kontak = \App\Models\Kontak::all();
     $gambar = \App\Models\Gambar::all();
-    $menu = \App\Models\Menu::all();
+    $menu = Menu::orderBy('created_at', 'desc')->get();
     $slider = \App\Models\Slider::all();
     $review = \App\Models\Review::all();
     return view('welcome', compact('promo','aboutUs','kontak','gambar','menu','slider','review'));
@@ -39,6 +41,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('kontak', kontakController::class);
     Route::resource('gambar', GambarController::class);
 });
+
+Route::get('/menuall', [MenuController::class, 'menuAll'])->name('menu.all');
+
 
 
 require __DIR__.'/auth.php';

@@ -8,6 +8,14 @@
                 @csrf
                 @method('PUT')
                 <div class="mb-4">
+                    <label class="block text-sm font-medium">Isi nama anda</label>
+                    <input type="text" name="nama" class="mt-1 block w-full border-gray-300 rounded-md" required />
+                    @error('nama')
+                    <span class="text-red-700  py-2 rounded">{{  $message }}</span>
+                    @enderror
+                </div>
+
+                <div class="mb-4">
                     <label class="block text-sm font-medium">Isi review</label>
                     <textarea name="review" id="editor" rows="5" class="mt-1 block w-full border-gray-300 rounded-md">{{ $review->review }}</textarea>
                     @error('review')

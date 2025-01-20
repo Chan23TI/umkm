@@ -11,7 +11,7 @@ class Menu extends Model
 
     protected $table = 'menu'; // Pastikan sesuai dengan nama tabel Anda.
 
-
+    public $timestamps =true;
 
     protected $fillable = [
         'nama',

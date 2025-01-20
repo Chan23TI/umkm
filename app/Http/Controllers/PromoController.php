@@ -13,7 +13,7 @@ class PromoController extends Controller
      */
     public function index()
     {
-        $promo = Promo::all();
+        $promo= Promo::orderBy('created_at', 'desc')->get(); //Menampilkan promo terbaru
         return view('promo.index', compact('promo'));
     }
 

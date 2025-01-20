@@ -9,11 +9,12 @@ use Illuminate\Support\Facades\Storage;
 
 class MenuController extends Controller
 {
+
     public function index()
-    {
-        $menu = Menu::all();
-        return view('menu.index', compact('menu'));
-    }
+{
+    $menu = Menu::orderBy('created_at', 'desc')->get(); //Menampilkan menu terbaru
+    return view('menu.index', compact('menu'));
+}
 
     public function create()
     {
@@ -59,7 +60,7 @@ class MenuController extends Controller
 
         $menu->nama = $validated['nama'];
         $menu->harga = $validated['harga'];
-        
+
 
         // Hapus elemen HTML yang tidak diinginkan dari deskripsi
         $menu->deskripsi = strip_tags($validated['deskripsi']);
